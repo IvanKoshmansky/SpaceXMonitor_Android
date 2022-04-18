@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="launch"
+            type="com.example.android.spacexmonitor.models.OneLaunchModel" />
+        <variable
+            name="clickListener"
+            type="com.example.android.spacexmonitor.main.viewpaging.LaunchesClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundLight"
+        android:onClick="@{() -> clickListener.onClick(launch)}">
+
+        <ImageView
+            android:id="@+id/iw_launch_icon_id"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="@+id/tw_name_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tw_name_id"
+            app:loadFromUrl="@{launch.iconUrl}"
+            tools:src="@drawable/ic_about" />
+
+        <TextView
+            android:id="@+id/tw_name_id"
+            style="@style/Body"
+            android:layout_width="@dimen/tab_text_width"
+            android:layout_height="wrap_content"
+            android:text="@{launch.name}"
+            app:layout_constraintBottom_toBottomOf="@+id/tw_cores_flight_id"
+            app:layout_constraintStart_toEndOf="@+id/iw_launch_icon_id"
+            app:layout_constraintTop_toTopOf="@+id/tw_cores_flight_id"
+            tools:text="name" />
+
+        <TextView
+            android:id="@+id/tw_cores_flight_id"
+            style="@style/Body"
+            android:layout_width="@dimen/tab_text_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tw_success_id"
+            app:layout_constraintStart_toEndOf="@+id/tw_name_id"
+            app:layout_constraintTop_toTopOf="@+id/tw_success_id"
+            app:nullableIntToText="@{launch.coresFlight}"
+            tools:text="cores_flight" />
+
+        <TextView
+            android:id="@+id/tw_success_id"
+            style="@style/Body"
+            android:layout_width="@dimen/tab_text_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tw_date_formatted_id"
+            app:layout_constraintStart_toEndOf="@+id/tw_cores_flight_id"
+            app:layout_constraintTop_toTopOf="@+id/tw_date_formatted_id"
+            app:nullableStatusToText="@{launch.success}"
+            tools:text="success" />
+
+        <TextView
+            android:id="@+id/tw_date_formatted_id"
+            style="@style/Body"
+            android:layout_width="@dimen/tab_text_width"
+            android:layout_height="wrap_content"
+            app:overviewDateFormattedFromUtc="@{launch.dateUtc}"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tw_success_id"
+            app:layout_constraintStart_toEndOf="@+id/tw_success_id"
+            tools:text="date_formatted" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
