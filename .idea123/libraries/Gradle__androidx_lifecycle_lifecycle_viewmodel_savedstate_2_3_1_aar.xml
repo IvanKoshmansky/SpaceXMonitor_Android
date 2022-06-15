@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/6fa70ce287370e1e54c533f2a073095f/jetified-lifecycle-viewmodel-savedstate-2.3.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/9da93fa1854f46cff658572574187e4c/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/9c97d8d90b976ca81e381cef3281786e/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/06648eea6f1a0f6a83326df6825a5810/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/f6326180617f6ebfe984929fed8e227f/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/bebfbbfbccf1e3f96575a52b5d6075c7/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/09d5db1f3fc2824200e8805cb650b541/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/5af5c7bd8100c6d8f1ef7ae8e217b8d0/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/09d5db1f3fc2824200e8805cb650b541/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/09d5db1f3fc2824200e8805cb650b541/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.3.1/411f92301435123d502de27b6f3262c062f3bd7a/lifecycle-viewmodel-savedstate-2.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

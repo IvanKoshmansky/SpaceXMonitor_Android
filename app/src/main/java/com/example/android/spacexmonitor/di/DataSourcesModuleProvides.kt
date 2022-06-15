@@ -1,27 +1,31 @@
 package com.example.android.spacexmonitor.di
 
 import android.app.Application
+import android.content.Context
 import com.example.android.spacexmonitor.localdb.*
 import com.example.android.spacexmonitor.webservice.*
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-// в случае зависимости на интерфейс используются модули
-// @Provides - во время исполнения вызвать функцию, которая возвращает объект, реализующий интерфейс
-// @Binds - подключить нужную реализацию интерфейса на этапе компиляции (более оптимально)
+// модуль Hilt для проведения зависимости на интерфейс, причем реализация получается через вызов билдера
+// в отличие от Dagger в Hilt нужно указывать из какого класса (компонента) android будет
+// использоваться данный модуль
+// SingletonComponent::class соответствует уровню приложения
 
 @Module
-class DataSourcesModuleProvides {
-
-    @Provides
+@InstallIn(SingletonComponent::class)
+object DataSourcesModuleProvides {
     @Singleton
-    fun provideLocalDatabase(application: Application): LocalDatabase {
-        return getDatabase(application.applicationContext)
+    @Provides
+    fun provideLocalDatabase(@ApplicationContext appContext: Context): LocalDatabase {
+        return getDatabase(appContext)
     }
-
-    @Provides
     @Singleton
+    @Provides
     fun provideSpaceXApiService(): SpaceXApiService {
         return getSpaceXApiService()
     }

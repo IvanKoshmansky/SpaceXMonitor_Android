@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-livedata:2.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/ec937236fa73e08253b508892a49f556/lifecycle-livedata-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/2721df279afe2a6967500ec406634fd5/transformed/lifecycle-livedata-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/dd7ca24d7f7cc5d5ec53fef18454b8b0/transformed/lifecycle-livedata-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/7c90b900ce2179ae6f4daca092bd5642/transformed/lifecycle-livedata-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/dd1035d48ab06390164c908fd033ef9d/transformed/lifecycle-livedata-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/e4075c678c27424273a1c71e919ff71c/transformed/lifecycle-livedata-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/05718afc078de5f6841489cc854daf8c/transformed/lifecycle-livedata-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/ec77f99b5175e6c276c7adef418a96e5/transformed/lifecycle-livedata-2.2.0/res" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/05718afc078de5f6841489cc854daf8c/transformed/lifecycle-livedata-2.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/05718afc078de5f6841489cc854daf8c/transformed/lifecycle-livedata-2.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata/2.2.0/9849dd6833f7e999169e4f9d48949cc92bf58b50/lifecycle-livedata-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

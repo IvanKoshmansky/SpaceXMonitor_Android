@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/8f21e811abd77da51c8756686fa517ad/vectordrawable-animated-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/d99766dbe41aee08cbe6792e3304ec82/transformed/vectordrawable-animated-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/10c410354f29d252bee0e0b4382ed304/transformed/vectordrawable-animated-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/1d9416e59156ee18699fc7e922c77496/transformed/vectordrawable-animated-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/0503f1d7f11f514120eeb17605301142/transformed/vectordrawable-animated-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/4e32df993229e29e31e1367f7f688679/transformed/vectordrawable-animated-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/3b495e910cb28ae9981015146b821d31/transformed/vectordrawable-animated-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/7acc9633ca2f91cd41afd922e881f20d/transformed/vectordrawable-animated-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/3b495e910cb28ae9981015146b821d31/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/3b495e910cb28ae9981015146b821d31/transformed/vectordrawable-animated-1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.vectordrawable/vectordrawable-animated/1.0.0/24f92bcc89d979cd8b99ae40def4e395850a6466/vectordrawable-animated-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

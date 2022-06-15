@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/ddc0e0fe0f1d200dccdca8bfd46b7b3d/slidingpanelayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/1fba6c108367715862bb1cb03c46cb26/transformed/slidingpanelayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/24aa3922eebd3b6dd5e910484d3d5e33/transformed/slidingpanelayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/820515d823e0fa71bbe2abd100aef248/transformed/slidingpanelayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/caeeea41c9351b174d08f9c08d6f3324/transformed/slidingpanelayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/f51279a7a915e13da3e53b8d70ac4af7/transformed/slidingpanelayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/d3b478b297853943407ce3c8c97d2149/transformed/slidingpanelayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/5c58fda3628b070a06005b7a2879a9c1/transformed/slidingpanelayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/d3b478b297853943407ce3c8c97d2149/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/d3b478b297853943407ce3c8c97d2149/transformed/slidingpanelayout-1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.slidingpanelayout/slidingpanelayout/1.0.0/f3f2e4fded24d5969a86e1974ad7e96975d970a0/slidingpanelayout-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

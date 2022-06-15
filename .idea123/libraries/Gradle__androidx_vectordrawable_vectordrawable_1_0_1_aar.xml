@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.vectordrawable:vectordrawable:1.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/fd368cce7369fe7b19d2b04714b54121/vectordrawable-1.0.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/8cf034fdf54ee74d391ba71273322b54/transformed/vectordrawable-1.0.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/2b3df6a2cf3cfc797745c4ad5854b4e8/transformed/vectordrawable-1.0.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/ad0f2025e2a550eae57e62eb89c7fa91/transformed/vectordrawable-1.0.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/3fa9d6f0305027ea0193962ffbe8e7ce/transformed/vectordrawable-1.0.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/4c8ff6f043c6929bce08e119b2a6cbc7/transformed/vectordrawable-1.0.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/675dfb06ed8f6bfd885be7e3a0f63f34/transformed/vectordrawable-1.0.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/a2c64a45456404fffe1a0861d49825a1/transformed/vectordrawable-1.0.1/res" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/675dfb06ed8f6bfd885be7e3a0f63f34/transformed/vectordrawable-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/675dfb06ed8f6bfd885be7e3a0f63f34/transformed/vectordrawable-1.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.vectordrawable/vectordrawable/1.0.1/583e25ffe77f2e89c6f3218a46657a500938b83f/vectordrawable-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

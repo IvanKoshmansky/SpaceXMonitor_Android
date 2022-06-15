@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.navigation:navigation-common-ktx:2.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/1c155a4b86b77eeb7e4e5ca875ad3ff9/navigation-common-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/32d8d6dcc4de69766ee5c1136d5242ef/transformed/navigation-common-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/b66babe0aff703af484eb6c03df69120/transformed/navigation-common-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/a4b933141012ecd994901132534f04a7/transformed/navigation-common-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/0310f36592d4591b2bcf464aa8035f16/transformed/navigation-common-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/829f96bdde91fba90d904b385d6dae28/transformed/navigation-common-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/fd7c40c4870a5b5f8b577dd7ba915932/transformed/navigation-common-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/73f98f1171e9058e65bac4ab65866e40/transformed/navigation-common-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/fd7c40c4870a5b5f8b577dd7ba915932/transformed/navigation-common-ktx-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/fd7c40c4870a5b5f8b577dd7ba915932/transformed/navigation-common-ktx-2.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.navigation/navigation-common-ktx/2.0.0/fcc8303ee080c7f4de61f3f462974e972a41adc7/navigation-common-ktx-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

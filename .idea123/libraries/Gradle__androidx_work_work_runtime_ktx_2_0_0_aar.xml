@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.work:work-runtime-ktx:2.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/86056f4dc5ed3be94a0d671e5f9dd471/work-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/2245b1875c537e51511b71523010484b/transformed/work-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/404ec0b143569d4f270289175a8eaf59/transformed/work-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/c957db61d02ac5a17ce14902bbb12e9b/transformed/work-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/5768e57193fe592fa6eed78f93a1d768/transformed/work-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/b4f61eca577d376cecc41a2a99669f69/transformed/work-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/1e2ef35984c087d6afe22b979725c92e/transformed/work-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/cfbe44f723320381b2d2bcde83f4ada4/transformed/work-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/1e2ef35984c087d6afe22b979725c92e/transformed/work-runtime-ktx-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/1e2ef35984c087d6afe22b979725c92e/transformed/work-runtime-ktx-2.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.work/work-runtime-ktx/2.0.0/a4552d31e1a0a3f51b738f4eb64cba6512be5dad/work-runtime-ktx-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

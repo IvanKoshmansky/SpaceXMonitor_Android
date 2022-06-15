@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.navigation:navigation-fragment-ktx:2.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/97ca71ea72a52cb26a58fa2bd03fff95/navigation-fragment-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/46e974061552d26c5401e84d541fe074/transformed/navigation-fragment-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/3beb9e7cf0d08c46723c719bdebd9170/transformed/navigation-fragment-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/80976aa833ab93aa771a69abb2c5af90/transformed/navigation-fragment-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/bfed7093c3f247f3257c19af4c8a830c/transformed/navigation-fragment-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/131a05ae8d36b2078677edf9ee28bd75/transformed/navigation-fragment-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/08f762a1cf5e1db6e4d073705df2e9d1/transformed/navigation-fragment-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/5fd9cd31d4ae74f4b2fb0b499ac43732/transformed/navigation-fragment-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/08f762a1cf5e1db6e4d073705df2e9d1/transformed/navigation-fragment-ktx-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/08f762a1cf5e1db6e4d073705df2e9d1/transformed/navigation-fragment-ktx-2.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.navigation/navigation-fragment-ktx/2.0.0/2a1f8dd68ebead585a2ae525d4778984bfc129cf/navigation-fragment-ktx-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -3,16 +3,24 @@ package com.example.android.spacexmonitor.di
 import com.example.android.spacexmonitor.webservice.*
 import dagger.Binds
 import dagger.Module
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-// в случае зависимости на интерфейс используются модули
-// @Provides - во время исполнения вызвать функцию, которая возвращает объект, реализующий интерфейс
-// @Binds - подключить нужную реализацию интерфейса на этапе компиляции (более оптимально)
+// модуль Hilt для проведения зависимости на интерфейс
+// в отличие от Dagger в Hilt нужно указывать из какого класса (компонента) android будет
+// использоваться данный модуль
+// SingletonComponent::class соответствует уровню приложения
 
 @Module
+@InstallIn(SingletonComponent::class)
 abstract class DataSourcesModuleBinds {
-
-    @Binds
     @Singleton
-    abstract fun bindsRemoteDataSource(remoteDataSource: RemoteDataSource): IRemoteDataSource
+    @Binds
+    abstract fun bindRemoteDataSource(
+        remoteDataSource: RemoteDataSource
+    ): IRemoteDataSource
 }
+
+//@ViewModelScoped - можно использовать вместо @Singleton для того, чтобы в каждый экземпляр
+//ViewModel передавался свой набор ссылок (scoped to ViewModel)

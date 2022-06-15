@@ -3,14 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1595" />
         <entry key="..\:/new/SpaceXMonitor/app/src/main/res/drawable/android.xml" value="0.156" />
         <entry key="..\:/new/SpaceXMonitor/app/src/main/res/drawable/ic_about.xml" value="0.156" />
+        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/drawable/ic_baseline_arrow_drop_up_24.xml" value="0.14" />
         <entry key="..\:/new/SpaceXMonitor/app/src/main/res/drawable/ic_dev.xml" value="0.156" />
+        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1595" />
+        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/drawable/ic_settings.xml" value="0.1595" />
+        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/font/cormorant_light.xml" value="0.23703703703703705" />
+        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/font/roboto_thin.xml" value="0.23703703703703705" />
         <entry key="..\:/new/SpaceXMonitor/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
-        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/layout/crew_item.xml" value="0.2" />
-        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/layout/fragment_detail.xml" value="0.536" />
-        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/layout/fragment_overview.xml" value="0.264" />
-        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/layout/launch_item.xml" value="0.264" />
+        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/layout/crew_item.xml" value="0.4" />
+        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/layout/fragment_detail.xml" value="0.4" />
+        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/layout/fragment_overview.xml" value="0.26288361320208453" />
+        <entry key="..\:/new/SpaceXMonitor/app/src/main/res/layout/launch_item.xml" value="0.4" />
         <entry key="..\:/new/SpaceXMonitor/app/src/main/res/menu/main_menu.xml" value="0.23645833333333333" />
       </map>
     </option>

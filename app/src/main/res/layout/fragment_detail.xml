@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.android.spacexmonitor.main.DetailFragment">
@@ -11,34 +12,84 @@
             type="com.example.android.spacexmonitor.main.MainViewModel" />
     </data>
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/detailFragmentLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorBackgroundLight">
+            android:layout_height="wrap_content" >
 
-                <!--основной вертикальный разделитель-->
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintGuide_percent="0.5"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <!--логотип миссии-->
-
-            <ImageView
-                android:id="@+id/iw_launch_icon_id"
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tw_detail_crew_members_lbl_id"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_width"
+                android:layout_marginTop="@dimen/standard_grid"
+                android:layout_marginEnd="@dimen/margin_width"
+                android:text="@string/fragment_detail_crew_header_lbl"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+                android:textColor="@color/color_on_primary"
+                app:firstBaselineToTopHeight="@dimen/standard_grid_3x"
+                app:lastBaselineToBottomHeight="@dimen/standard_grid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tw_mission_details_id"
+                app:lineHeight="@dimen/standard_grid_2x" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tw_mission_details_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_width"
+                android:layout_marginTop="@dimen/standard_grid"
+                android:layout_marginEnd="@dimen/margin_width"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                android:textColor="@color/color_on_primary"
+                app:firstBaselineToTopHeight="@dimen/standard_grid_2x"
+                app:lastBaselineToBottomHeight="@dimen/small_grid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tw_detail_mission_details_lbl_id"
+                app:lineHeight="@dimen/standard_grid_2x"
+                app:nullableDetailsToText="@{viewModel.detailLiveData.details}"
+                tools:text="Детали миссии" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tw_detail_mission_details_lbl_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_width"
+                android:layout_marginTop="@dimen/standard_grid"
+                android:layout_marginEnd="@dimen/margin_width"
+                android:text="@string/fragment_detail_details_lbl"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+                android:textColor="@color/color_on_primary"
+                app:firstBaselineToTopHeight="@dimen/standard_grid_3x"
+                app:lastBaselineToBottomHeight="@dimen/standard_grid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tw_detail_cores_flight_id"
+                app:lineHeight="@dimen/standard_grid_2x" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/iw_detail_launch_icon_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_width"
+                android:layout_marginTop="@dimen/standard_grid"
+                android:scaleType="centerCrop"
                 android:adjustViewBounds="true"
                 app:layout_constraintEnd_toStartOf="@+id/guideline"
                 app:layout_constraintStart_toStartOf="parent"
@@ -46,322 +97,98 @@
                 app:loadFromUrl="@{viewModel.detailLiveData.imageUrl}"
                 tools:src="@drawable/ic_about" />
 
-                <!--наименование миссии-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tw_detail_name_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gutter_plus_standard_grid"
+                android:layout_marginTop="@dimen/standard_grid"
+                android:layout_marginEnd="@dimen/margin_width"
+                android:text="@{viewModel.detailLiveData.simple.name}"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+                android:textColor="@color/color_on_primary"
+                app:firstBaselineToTopHeight="@dimen/standard_grid_3x"
+                app:lastBaselineToBottomHeight="@dimen/standard_grid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lineHeight="@dimen/standard_grid_3x"
+                tools:text="Наименование миссии" />
 
-                <TextView
-                    android:id="@+id/tw_detail_name_lbl_id"
-                    style="@style/Subtitle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:text="@string/fragment_detail_name_lbl"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:text="Наименование миссии:" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tw_detail_status_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gutter_plus_standard_grid"
+                android:layout_marginTop="@dimen/standard_grid"
+                android:layout_marginEnd="@dimen/margin_width"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                android:textColor="@color/color_on_primary"
+                app:firstBaselineToTopHeight="@dimen/standard_grid_2x"
+                app:lastBaselineToBottomHeight="@dimen/small_grid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/tw_detail_name_id"
+                app:lineHeight="@dimen/standard_grid_2x"
+                app:nullableStatusToText="@{viewModel.detailLiveData.simple.success}"
+                tools:text="Успешно" />
 
-                <TextView
-                    android:id="@+id/tw_detail_name_id"
-                    style="@style/Body"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:text="@{viewModel.detailLiveData.simple.name}"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/tw_detail_name_lbl_id"
-                    tools:text="tw_detail_name_id" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tw_detail_launch_date_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gutter_plus_standard_grid"
+                android:layout_marginTop="@dimen/standard_grid"
+                android:layout_marginEnd="@dimen/margin_width"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                android:textColor="@color/color_on_primary"
+                app:detailDateFormattedFromUtc="@{viewModel.detailLiveData.simple.dateUtc}"
+                app:firstBaselineToTopHeight="@dimen/standard_grid_2x"
+                app:lastBaselineToBottomHeight="@dimen/small_grid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/tw_detail_status_id"
+                app:lineHeight="@dimen/standard_grid_2x"
+                tools:text="Дата запуска миссии: ЧЧ:ММ ДД-ММ-ГГГГ" />
 
-                <!--количество повторных использований-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tw_detail_cores_flight_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_width"
+                android:layout_marginTop="@dimen/standard_grid"
+                android:layout_marginEnd="@dimen/margin_width"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                android:textColor="@color/color_on_primary"
+                app:firstBaselineToTopHeight="@dimen/standard_grid_2x"
+                app:lastBaselineToBottomHeight="@dimen/small_grid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_barrier"
+                app:lineHeight="@dimen/standard_grid_2x"
+                app:nullableCoresFlightToText="@{viewModel.detailLiveData.simple.coresFlight}"
+                tools:text="Количество повторных использований первой ступени: 2" />
 
-                <View
-                    android:id="@+id/divider"
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:background="@color/colorBackgroundDark"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/tw_detail_name_id" />
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/detail_barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="iw_detail_launch_icon_id, tw_detail_launch_date_id" />
 
-                <TextView
-                    android:id="@+id/tw_detail_cores_flight_lbl_id"
-                    style="@style/Subtitle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:text="@string/fragment_detail_cores_flight_lbl"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/divider"
-                    tools:text="Количество повторных использований первой ступени:" />
-
-                <TextView
-                    android:id="@+id/tw_detail_cores_flight_id"
-                    style="@style/Body"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    app:nullableIntToText="@{viewModel.detailLiveData.simple.coresFlight}"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/tw_detail_cores_flight_lbl_id"
-                    tools:text="tw_detail_cores_flight_id" />
-
-                <!--статус миссии-->
-
-                <View
-                    android:id="@+id/divider2"
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:background="@color/colorBackgroundDark"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/tw_detail_cores_flight_id" />
-
-                <TextView
-                    android:id="@+id/tw_detail_success_lbl_id"
-                    style="@style/Subtitle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:text="@string/fragment_detail_success_lbl"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/divider2"
-                    tools:text="Статус миссии:" />
-
-                <TextView
-                    android:id="@+id/tw_detail_success_id"
-                    style="@style/Body"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    app:nullableStatusToText="@{viewModel.detailLiveData.simple.success}"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/tw_detail_success_lbl_id"
-                    tools:text="tw_detail_success_id" />
-
-                <!--дата-время запуска миссии в нужном формате-->
-
-                <View
-                    android:id="@+id/divider3"
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:background="@color/colorBackgroundDark"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/tw_detail_success_id" />
-
-                <TextView
-                    android:id="@+id/tw_detail_date_formatted_lbl_id"
-                    style="@style/Subtitle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:text="@string/fragment_detail_datetime_lbl"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/divider3"
-                    tools:text="Дата-время запуска миссии:" />
-
-                <TextView
-                    android:id="@+id/tw_detail_date_formatted_id"
-                    style="@style/Body"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    app:detailDateFormattedFromUtc="@{viewModel.detailLiveData.simple.dateUtc}"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/tw_detail_date_formatted_lbl_id"
-                    tools:text="tw_detail_date_formatted_id" />
-
-                <!--барьер чтобы более нижние вью подравнялись под общую линию сверху-->
-
-                <androidx.constraintlayout.widget.Barrier
-                    android:id="@+id/b_detail_horizontal_id"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:barrierDirection="bottom"
-                    app:constraint_referenced_ids="tw_logo_id,tw_detail_date_formatted_id"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <!--разделитель под логотипом-->
-
-                <View
-                    android:id="@+id/divider4"
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:background="@color/colorBackgroundDark"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/b_detail_horizontal_id" />
-
-                <!--детали миссии-->
-
-                <TextView
-                    android:id="@+id/tw_detail_details_lbl_id"
-                    style="@style/Subtitle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:text="@string/fragment_detail_details_lbl"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/divider4"
-                    tools:text="Детали миссии:" />
-
-                <TextView
-                    android:id="@+id/tw_detail_details_id"
-                    style="@style/Body"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    app:nullableDetailsToText="@{viewModel.detailLiveData.details}"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tw_detail_details_lbl_id"
-                    tools:text="tw_detail_details_id" />
-
-                <!--список экипажа-->
-
-                <View
-                    android:id="@+id/divider5"
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:background="@color/colorBackgroundDark"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tw_detail_details_id" />
-
-                <TextView
-                    android:id="@+id/tw_detail_crew_lbl_id"
-                    style="@style/Subtitle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:text="@string/fragment_detail_crew_header_lbl"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/divider5"
-                    tools:text="Список экипажа:" />
-
-                <!--вложенный линеар лэйаут нужен для задействования gravity у textview для выравнивания-->
-                <!--элементов по одной и той же ширине но с ограничением на заполнение в пределах экрана-->
-                <!--без горизонтальной прокрутки-->
-
-                <LinearLayout
-                    android:id="@+id/linearLayout"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:background="@color/colorBackgroundLight"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tw_detail_crew_lbl_id">
-
-                        <!--заголовок таблицы-->
-
-                        <TextView
-                            style="@style/Body"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginEnd="@dimen/margin_small"
-                            android:text="@string/fragment_detail_crew_member_name_lbl"
-                            tools:text="Ф.И.О."/>
-
-                        <TextView
-                            style="@style/Body"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginEnd="@dimen/margin_small"
-                            android:text="@string/fragment_detail_crew_member_agency"
-                            tools:text="Агенство"/>
-
-                        <TextView
-                            style="@style/Body"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/fragment_detail_crew_member_status_lbl"
-                            tools:text="Статус"/>
-                </LinearLayout>
-
-                <!--список участников команды-->
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/detail_crew_list"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_small"
-                    android:layout_marginBottom="@dimen/margin_small"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/detail_crew_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_width"
+                android:layout_marginTop="@dimen/standard_grid"
+                android:layout_marginEnd="@dimen/margin_width"
+                android:layout_marginBottom="@dimen/standard_grid"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tw_detail_crew_members_lbl_id" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </ScrollView>
+    </ScrollView>
 </layout>

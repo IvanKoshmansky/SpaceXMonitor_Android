@@ -8,13 +8,23 @@ import androidx.paging.cachedIn
 import com.example.android.spacexmonitor.LocalRepository
 import com.example.android.spacexmonitor.PAGE_SIZE
 import com.example.android.spacexmonitor.main.viewpaging.*
-import com.example.android.spacexmonitor.models.OneLaunchDetailModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+// @ViewModelInject устарел и заменен на @HiltViewModel в связке с
+
+// ВАЖНО: Отличие ViewModel от AndroidViewModel
+//AndroidViewModel provides Application context
+//If you need to use context inside your Viewmodel you should use AndroidViewModel (AVM),
+//because it contains the application context. To retrieve the context call getApplication(),
+//otherwise use the regular ViewModel (VM).
+
+@HiltViewModel
 class MainViewModel @Inject constructor (
-    application: Application, val localRepository: LocalRepository
-) : AndroidViewModel(application) {
+    val localRepository: LocalRepository
+) : ViewModel() {
 
     private var pager = Pager(
         config = PagingConfig(
@@ -63,5 +73,15 @@ class MainViewModel @Inject constructor (
             localRepository.clearLocalCache()
             _needToRefreshAdapter.setValue(true) // Dispatcher.MAIN во ViewModelScope по умолчанию
         }
+    }
+
+    private val _scrollToTop = MutableLiveData<Boolean>()
+    val scrollToTop
+        get() = _scrollToTop
+    fun scrollToTopReset() {
+        _scrollToTop.value = false
+    }
+    fun onClickFAB() {
+        _scrollToTop.value = true
     }
 }

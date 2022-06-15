@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.paging:paging-runtime:3.1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/75332c35b3c79ccacc276e8521631686/transformed/paging-runtime-3.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/75332c35b3c79ccacc276e8521631686/transformed/paging-runtime-3.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/75332c35b3c79ccacc276e8521631686/transformed/paging-runtime-3.1.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.paging/paging-runtime/3.1.1/4379f9bd714b051dbd90fae003cd58905df25f59/paging-runtime-3.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

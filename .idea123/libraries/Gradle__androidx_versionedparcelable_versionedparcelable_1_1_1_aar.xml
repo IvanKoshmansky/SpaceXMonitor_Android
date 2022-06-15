@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/77e06c4c9a4ca487eb60342a636f2cfc/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/fff9e921093de1cfa02f8c05e6218966/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/5b8480d66baa59504c606ff37b9eb8cb/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/cd27b5db0a542c9c6a3ccdee529bfd11/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/fbbe60a0260f4aac311e67465be664d8/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/2c3ba5e75711da739aa072743877a674/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/0834e94acfd7c2637300677e3df3bd46/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/a38d10f90d4a88b87838bca123b74fea/transformed/versionedparcelable-1.1.1/res" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/0834e94acfd7c2637300677e3df3bd46/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/0834e94acfd7c2637300677e3df3bd46/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.1/d9085927216387af679d18b6f472bc0fc5c7cc81/versionedparcelable-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

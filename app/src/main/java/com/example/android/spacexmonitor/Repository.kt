@@ -80,19 +80,13 @@ class LocalRepository @Inject constructor (val localDataSource: LocalDatabase, v
         }
     }
 
-    // для второго экрана локальный кэш вместо рума
-    private companion object {
-        private var cachedOneLaunchDetail: OneLaunchDetailModel? = null
-    }
-    fun invalidateOneLaunchDetailCache() {
-        cachedOneLaunchDetail = null
+    fun invalidateOneLaunchDetail() {
+        // перед открытием второго экрана
+        detailLiveData.value = OneLaunchDetailModel.fillEmpty()
     }
     val detailLiveData = MutableLiveData<OneLaunchDetailModel>().apply {
-        value = if (cachedOneLaunchDetail != null) {
-            cachedOneLaunchDetail
-        } else {
-            OneLaunchDetailModel.fillEmpty()
-        }
+        // при первом создании
+        value = OneLaunchDetailModel.fillEmpty()
     }
     // CrewMembers приходит от 08.04.2022
     suspend fun refreshOneLaunchDetail(launchId: String) {
@@ -102,7 +96,7 @@ class LocalRepository @Inject constructor (val localDataSource: LocalDatabase, v
                 val crewMembersResponse = remoteDataSource.getCrewMembers(launchId)
                 if (crewMembersResponse.result == RemoteDataSourceResult.DONE) {
                     // оба запроса успешны - собираем результат и грузим в LiveData
-                    cachedOneLaunchDetail = OneLaunchDetailModel(
+                    val oneLaunchDetail = OneLaunchDetailModel(
                         simple = OneLaunchModel(
                             iconUrl = "",
                             name = oneLaunchResponse.name,
@@ -118,7 +112,7 @@ class LocalRepository @Inject constructor (val localDataSource: LocalDatabase, v
                         }
                     )
                     // здесь postValue, потому что из IO треда в MAIN (в LiveData)
-                    detailLiveData.postValue(cachedOneLaunchDetail)
+                    detailLiveData.postValue(oneLaunchDetail)
                 }
             }
         }

@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-extensions:2.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/5ed6bc64f11a9bec9877d83448faaf63/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/672bca5cb75b67053927892d5dfc2637/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/59bc1bfcbfb7349bbdc776656435f202/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/f6fd542b16cce6a471e90a831aa8847f/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/62e08497dffab76c3ff9b3d77902ebe6/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/a57515a01507b98b1ca4c1394cfdfe91/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/37f565888d48b6b40cfc4da47071c0e2/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/052bdec44bb671fb79fa058a4a5b07b3/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/37f565888d48b6b40cfc4da47071c0e2/transformed/lifecycle-extensions-2.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/37f565888d48b6b40cfc4da47071c0e2/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-extensions/2.2.0/32e7a190b796f6853c89f5d6b92b64a6fe8318d3/lifecycle-extensions-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

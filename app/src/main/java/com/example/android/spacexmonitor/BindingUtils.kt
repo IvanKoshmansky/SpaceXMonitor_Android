@@ -5,22 +5,29 @@ import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import coil.load
 
-@BindingAdapter("nullableIntToText")
-fun TextView.nullableIntToText(value: Int?) {
-    text = if (value != null) value.toString() else "Нет данных"
-}
-
+// статус миссии с поддержкой null
+// "Успешно/Не успешно/Нет данных о статусе"
 @BindingAdapter("nullableStatusToText")
 fun TextView.nullableStatusToText(success: Boolean?) {
     text = if (success != null) {
         if (success) "Успешно" else "Не успешно"
-    } else "Нет данных"
+    } else "Нет данных о статусе"
+}
+
+// количество повторных использований первой ступени с поддержкой null
+// "Количество повторных использований первой ступени: <value>/не данных"
+@BindingAdapter("nullableCoresFlightToText")
+fun TextView.nullableIntToText(value: Int?) {
+    var str = context.getText(R.string.cores_flight_prefix).toString()
+    str += " "
+    str += value ?: "нет данных"
+    text = str
 }
 
 // образец: 2022-07-01T00:00:00
 private val utcRegex = Regex("""(\d\d\d\d)-(\d\d)-(\d\d)T(\d\d):(\d\d):(\d\d)""")
 
-// формат для Overview
+// преобразование даты запуска миссии для первого экрана
 @BindingAdapter("overviewDateFormattedFromUtc")
 fun TextView.dateFromUtc_DD_MM_YYYY(dateUtc: String) {
     var result = ""
@@ -30,10 +37,12 @@ fun TextView.dateFromUtc_DD_MM_YYYY(dateUtc: String) {
         // ДД-ММ-ГГГГ
         result = "${values[2]}-${values[1]}-${values[0]}"
     }
-    text = result
+    var str = context.getText(R.string.mission_date_overview_prefix).toString()
+    str += " $result"
+    text = str
 }
 
-// формат для Detail
+// формат для второго экрана
 @BindingAdapter("detailDateFormattedFromUtc")
 fun TextView.dateFromUtc_HH_MM_DD_MM_YYYY(dateUtc: String) {
     var result = ""
@@ -43,7 +52,9 @@ fun TextView.dateFromUtc_HH_MM_DD_MM_YYYY(dateUtc: String) {
         // ЧЧ:ММ ДД-ММ-ГГГГ
         result = "${values[3]}:${values[4]} ${values[2]}-${values[1]}-${values[0]}"
     }
-    text = result
+    var str = context.getText(R.string.mission_date_overview_prefix).toString()
+    str += " $result"
+    text = str
 }
 
 // преобразование деталей миссии с возможностью значения null

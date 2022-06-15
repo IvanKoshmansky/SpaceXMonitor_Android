@@ -14,83 +14,36 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/overviewFragmentLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorBackgroundLight">
+        android:layout_height="match_parent">
 
-        <HorizontalScrollView
-            android:id="@+id/horizontalScrollView"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/overview_list"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_margin="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_width"
+            android:layout_marginEnd="@dimen/margin_width"
+            android:paddingTop="@dimen/standard_grid"
+            android:paddingBottom="@dimen/standard_grid"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24"
+            android:visibility="invisible"
+            android:onClick="@{() -> viewModel.onClickFAB()}"
+            android:contentDescription="@string/content_description"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-                <View
-                    android:id="@+id/header_starting_space_id"
-                    android:layout_width="@dimen/icon_size"
-                    android:layout_height="@dimen/icon_size"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/tw_header_name_id"
-                    style="@style/Body"
-                    android:layout_width="@dimen/tab_text_width"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fragment_main_name_column"
-                    app:layout_constraintStart_toEndOf="@+id/header_starting_space_id"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/tw_header_cores_flight_id"
-                    style="@style/Body"
-                    android:layout_width="@dimen/tab_text_width"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fragment_main_cores_flight_column"
-                    app:layout_constraintStart_toEndOf="@+id/tw_header_name_id"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/tw_header_success_id"
-                    style="@style/Body"
-                    android:layout_width="@dimen/tab_text_width"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fragment_main_success_column"
-                    app:layout_constraintStart_toEndOf="@+id/tw_header_cores_flight_id"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/tw_header_date_formatted_id"
-                    style="@style/Body"
-                    android:layout_width="@dimen/tab_text_width"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fragment_main_date_formatted_column"
-                    app:layout_constraintStart_toEndOf="@+id/tw_header_success_id"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <androidx.constraintlayout.widget.Barrier
-                    android:id="@+id/b_header_id"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:barrierDirection="bottom"
-                    app:constraint_referenced_ids="header_starting_space_id,tw_header_name_id,tw_header_cores_flight_id,tw_header_success_id,tw_header_date_formatted_id" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/overview_list"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/b_header_id" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </HorizontalScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.navigation:navigation-runtime-ktx:2.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/149e2a7c56fd8a734e526f56e54e4b9a/navigation-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/87fe3fefa5196631b53ffcbc7e174bc2/transformed/navigation-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/3beecfe07c524d7083d423c851bf46ec/transformed/navigation-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/e7a3abef7a36386e4c8aef0d7b027e01/transformed/navigation-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/07464877a5a4a20921a22f3069094a11/transformed/navigation-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/f4b50b05b906ff6078812315957ec0c5/transformed/navigation-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/936eab20b4b82dbef4e674c57cc8d4d6/transformed/navigation-runtime-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/7ae6b8a99d7807fa819f82d18cee5685/transformed/navigation-runtime-ktx-2.0.0/res" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/936eab20b4b82dbef4e674c57cc8d4d6/transformed/navigation-runtime-ktx-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/936eab20b4b82dbef4e674c57cc8d4d6/transformed/navigation-runtime-ktx-2.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.navigation/navigation-runtime-ktx/2.0.0/89a650602098396ae8735b89d82062b42d4b9db2/navigation-runtime-ktx-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

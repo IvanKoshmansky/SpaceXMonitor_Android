@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SpaceXMonitorApp</string>
-    <string name="fragment_main_header">SpaceXMonitorApp</string>
-    <string name="fragment_detail_header">SpaceXMonitorApp</string>
+    <string name="fragment_main_header">Обзор миссий</string>
+    <string name="fragment_detail_header">Детали миссии</string>
     <string name="fragment_main_text">Для начала работы воспользуйтесь контекстным меню</string>
     <string name="fragment_main_icon_column">Иконка миссии</string>
     <string name="fragment_main_name_column">Название</string>
@@ -14,8 +14,10 @@
     <string name="fragment_detail_datetime_lbl">Дата-время запуска миссии:</string>
     <string name="fragment_detail_details_lbl">Детали миссии:</string>
     <string name="fragment_detail_crew_header_lbl">Список экипажа:</string>
-    <string name="fragment_detail_crew_member_name_lbl">Ф.И.О.</string>
-    <string name="fragment_detail_crew_member_agency">Агенство</string>
-    <string name="fragment_detail_crew_member_status_lbl">Статус</string>
+    <string name="fragment_detail_crew_member_agency_lbl">Агенство:</string>
+    <string name="fragment_detail_crew_member_status_lbl">Статус:</string>
     <string name="main_menu_sync_launches">SyncNow</string>
+    <string name="mission_date_overview_prefix">Дата запуска миссии:</string>
+    <string name="cores_flight_prefix">Количество повторных использований первой ступени:</string>
+    <string name="content_description">ContentDescription</string>
 </resources>

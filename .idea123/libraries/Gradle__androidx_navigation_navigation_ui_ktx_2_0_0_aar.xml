@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.navigation:navigation-ui-ktx:2.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-2/files-2.1/3c7d1612a8df7dd340d3fb781e8b6655/navigation-ui-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/d9e2c57dc76c450cb3fabbb039c93ed8/transformed/navigation-ui-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/4a6424d94b8a0e8737d762a23c547a20/transformed/navigation-ui-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/6c83b0f9c906fcdad630dd56ef61d4e3/transformed/navigation-ui-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/ff48eaf3b8933e098b64bfaa2e44b7f6/transformed/navigation-ui-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/0f503dfa07d557d7d8eca3f163abaadc/transformed/navigation-ui-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/d069f21feb55bb2920f1148c9025373a/transformed/navigation-ui-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/64499765287285d330102fa032bb9943/transformed/navigation-ui-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/d069f21feb55bb2920f1148c9025373a/transformed/navigation-ui-ktx-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/transforms-3/d069f21feb55bb2920f1148c9025373a/transformed/navigation-ui-ktx-2.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.jdks/corretto-1.8.0_322/caches/modules-2/files-2.1/androidx.navigation/navigation-ui-ktx/2.0.0/2a3133fd01dfcc8cc485a847d085c39ef198a842/navigation-ui-ktx-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
