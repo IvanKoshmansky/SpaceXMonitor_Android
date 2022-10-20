@@ -17,5 +17,13 @@ This project gave me the opportunity to improve my android development skills. N
 - Made a migration from the Paging2 to the Paging3 library
 - Applied the Coil library for loading images instead of the Glide
 
-![detail-screen](https://user-images.githubusercontent.com/102755986/196852359-ba1f3a4c-e3f1-4508-b0c3-736566ee2388.png)
+Also, this project keeps everyone up to date with current SpaceX events! :grinning:
+
+## Project components ##
+
+## Screenshots ##
+
 ![main-screen](https://user-images.githubusercontent.com/102755986/196852367-d3fbdb0d-4e9e-471f-a921-e354fc5d155b.png)
+![detail-screen](https://user-images.githubusercontent.com/102755986/196852359-ba1f3a4c-e3f1-4508-b0c3-736566ee2388.png)
+
+### Download the APK ###
