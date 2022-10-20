@@ -2,6 +2,7 @@
 
 ## What is this project about?
 
+This app provides up-to-date information about SpaceX launches starting from 2021.
 
 
 ![detail-screen](https://user-images.githubusercontent.com/102755986/196852359-ba1f3a4c-e3f1-4508-b0c3-736566ee2388.png)
