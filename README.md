@@ -19,7 +19,7 @@ This project gave me the opportunity to improve my android development skills. N
 
 Also, this project keeps everyone up to date with current SpaceX events! :grinning:
 
-## Project components ##
+## Application components ##
 
 ## Screenshots ##
 
