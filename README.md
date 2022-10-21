@@ -13,7 +13,7 @@ This project gave me the opportunity to improve my android development skills. N
 - Kotlin skills when working with Lists and Arrays
 - Understanding the concept of dependency injection, and applying it to an android application using the Hilt library
 - Improved layout implementation skills according to the Material Design guidelines
-- Improved understanding of the principles of the HTTP protocol, and how to work with it by the Retrofit2
+- Improved understanding of the principles of the HTTP protocol, and how to work with it using Retrofit2
 - Made a migration from the Paging2 to the Paging3 library
 - Applied the Coil library for loading images instead of the Glide
 
