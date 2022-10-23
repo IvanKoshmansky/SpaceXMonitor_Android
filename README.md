@@ -20,8 +20,9 @@ This project gave me the opportunity to improve my android development skills. N
 Also, this project keeps everyone up to date with current SpaceX events! :grinning:
 
 ## Application components ##
+
 The application consists of the following components:
-1. The Web service: package `webservice`  
+1. The Web service: package `webservice`.  
 The web service performs the interaction of the rest application components with the server.
 The web service works in read-only mode, it cannot change the data stored on the server.
 The web service provides access to its functions through the `IRemoteDataSource` interface.  
@@ -37,30 +38,34 @@ This service is declared as `SpaceXApiService`.
 This web service organization scheme allows we to separate the interface from the implementation,
 and gives the possibility to replace the API for working with the server without changes in the rest of the application.  
 
-2. The Local database: package `localdb`
-  The local DB is needed to save a local cache of missions downloaded from the server.
-The database is based on the Room library.
-Access to the database API is provided through the DatabaseDao interface.
-In this interface, methods are declared that serve to:
-    - reading information about all saved launches from the launches_table: getLaunches(),
-    - inserting new rows into launches_table: insertLaunches(),
-    - clearing the entire table: clearTable().
-3. Repository: class Repository
-The repository is the universal data store for the entire application.
-It separates the data layer in the application from the layer of business logic and UI components.
-The repository is also a data mediator and it determines the need
-in requests to the server through the IRemoteDataSource interface
-or reading data from a local database via the LocalDatabase interface.
-Both of these dependencies are committed to the repository using the Hilt library.
-4. ViewModel layer: class MainViewModel
-The MainViewModel provides the link between the UI controllers and the data layer (repository).
-This class implements features that provide LiveData updates for:
-- the list adapter: overviewLiveData,
-- the screen with the launch details: detailLiveData.
-Also it provides methods that are needed for user feedback:
-- reaction to taping on an element of the list: onItemClicked(),
-- reaction to taping the floating button "to the top of the list": onClickFAB().
-In this application, a single MainViewModel maintains the state of the UI controllers for the two screens.
+2. The Local database: package `localdb`.  
+The local DB is needed to save a local cache of missions downloaded from the server.
+The database is based on the **Room** library.
+Access to the database API is provided through the `DatabaseDao` interface.  
+There are methods declared in this interface that serves to:
+    - reading information about all saved launches from the `launches_table`: `getLaunches()`,
+    - inserting new rows into `launches_table`: `insertLaunches()`,
+    - clearing the entire table: `clearTable()`.  
+
+3. The Repository: class `Repository`.  
+The repository is a universal data storage for the entire application.
+It separates the data layer of the application from the layer of business logic and UI components.
+The repository is also a data mediator and it determines when we need a new data from the server (via `IRemoteDataSource`)
+or the need for reading data from a local database via the `LocalDatabase` interface.
+Both of these dependencies are provided to the repository using the **Hilt** library.  
+
+4. The ViewModel layer: class `MainViewModel`  
+The MainViewModel provides the link between the UI controllers and the data layer (repository).  
+This class implements features that provide **LiveData** updates for:
+    - the list adapter: `overviewLiveData`,
+    - the screen with the launch details: `detailLiveData`.  
+
+    Also it provides methods that are needed for user feedback:  
+    - reaction to taping on an element of the list: `onItemClicked()`,
+    - reaction to taping the floating button "to the top of the list": `onClickFAB()`.  
+
+    In this application, a single MainViewModel maintains the state of the UI controllers for the two screens.
+
 5. UI controllers, which are contained in two fragments: OverviewFragment and DetailFragment
 Provide direct user interaction: SpaceX mission list visualization,
 transitions between screens, showing detailed information about each mission.
