@@ -36,7 +36,7 @@ The `RemoteDataSource` class has a dependency on the **Retrofit** service.
 This service is declared as `SpaceXApiService`.
 `SpaceXApiService` deals directly with the HTTP protocol using `@POST` and `@GET` requests.
 This web service organization scheme allows we to separate the interface from the implementation,
-and gives the possibility to replace the API for working with the server without changes in the rest of the application.  
+and gives the possibility to change the API for working with the server without changes in the rest of the application.  
 
 2. The Local database: package `localdb`.  
 The local DB is needed to save a local cache of missions downloaded from the server.
@@ -55,7 +55,7 @@ or the need for reading data from a local database via the `LocalDatabase` inter
 Both of these dependencies are provided to the repository using the **Hilt** library.  
 
 4. The ViewModel layer: class `MainViewModel`  
-The MainViewModel provides the link between the UI controllers and the data layer (repository).  
+The `MainViewModel` provides the link between the UI controllers and the data layer (repository).  
 This class implements features that provide **LiveData** updates for:
     - the list adapter: `overviewLiveData`,
     - the screen with the launch details: `detailLiveData`.  
@@ -64,17 +64,18 @@ This class implements features that provide **LiveData** updates for:
     - reaction to taping on an element of the list: `onItemClicked()`,
     - reaction to taping the floating button "to the top of the list": `onClickFAB()`.  
 
-    In this application, a single MainViewModel maintains the state of the UI controllers for the two screens.
+    In this application, a single `MainViewModel` maintains the state of the UI controllers for the two screens.
 
-5. UI controllers, which are contained in two fragments: OverviewFragment and DetailFragment
-Provide direct user interaction: SpaceX mission list visualization,
+5. UI controllers, which are contained in two fragments: `OverviewFragment` and `DetailFragment`.  
+Provides a user interaction with the app: SpaceX mission list visualization,
 transitions between screens, showing detailed information about each mission.
-To display a list of missions with pagination, the Paging3 library is used.
-The Navigation library is used to navigate between screens.
-Coil library is used to load images.
-6. Android Application object: SpaceXMonitorApplication
-Is the root component of the application and is used to pass dependencies to other
-components with Hilt.
+    - To display a list of missions with pagination, the **Paging3** library is used.
+    - The **Navigation** library is used to navigate between screens.
+    - **Coil** library is used to load images.  
+
+6. The Android Application object: `SpaceXMonitorApplication`  
+There is the root component of the application and is used to pass dependencies to other
+components via the **Hilt**.
 
 ## Screenshots ##
 
