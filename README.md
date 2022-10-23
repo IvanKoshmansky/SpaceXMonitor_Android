@@ -81,5 +81,5 @@ components via the **Hilt**.
 
 ![spacex-screenshots](https://user-images.githubusercontent.com/102755986/197375941-e03df2c8-f692-4e3e-bd2f-31306002d10b.png)
 
-### Download the APK ###
+### Link to the APK ###
 [SpaceXMonitor](https://github.com/IvanKoshmansky/SpaceXMonitor_Android/blob/main/spacexmonitor.apk)
