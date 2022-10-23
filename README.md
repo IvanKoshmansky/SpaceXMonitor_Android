@@ -74,7 +74,7 @@ transitions between screens, showing detailed information about each mission.
     - **Coil** library is used to load images.  
 
 6. The Android Application object: `SpaceXMonitorApplication`  
-There is the root component of the application and is used to pass dependencies to other
+There is the root component of the application, it is used to pass dependencies to other
 components via the **Hilt**.
 
 ## Screenshots ##
